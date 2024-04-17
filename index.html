@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<button id="btn">
+<p>When you mouseover your cursor on this button, a close button will appear</p>
+<img id="closebtn" src="kapat.png">
+</button>
+
+<button id="reload">Reload</button>
+
+<script>
+
+let closebtn = document.getElementById("closebtn");
+let button = document.getElementById("btn");
+let buttonreload = document.getElementById("reload")
+
+button.addEventListener("mouseover", function() {
+button.style.color = "white";
+closebtn.classList.add("showme");
+});
+
+button.addEventListener("mouseleave", function() {
+button.style.color = "grey";
+closebtn.classList.remove("showme");
+});
+
+closebtn.addEventListener("click", function() {
+button.remove();
+})
+
+buttonreload.addEventListener("click", function() {
+window.location.reload();
+})
+</script>
+</body>
+</html>

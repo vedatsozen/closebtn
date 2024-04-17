@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}
+
+button#btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    color: grey;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 4px;
+    width:60%;
+    height:150px;
+}
+
+button#btn > p {
+    margin: auto;
+}
+
+button > img {
+    visibility: hidden;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    top: 10px;
+    right:10px;
+}
+
+.showme {
+    visibility: visible;
+}
+
+button#reload {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
